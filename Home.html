@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John - Full Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">John.dev</h1>
+            <nav class="desktop-nav">
+                <a href="#profile">Profile</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a href="https://www.linkedin.com/in/john-g-830327293/" target="_blank" class="social-icon" aria-label="LinkedIn profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <button id="mode-toggle" aria-label="Toggle light and dark mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="#profile" onclick="toggleMenu()">Profile</a>
+            <a href="#skills" onclick="toggleMenu()">Skills</a>
+            <a href="#projects" onclick="toggleMenu()">Projects</a>
+            <a href="#education" onclick="toggleMenu()">Education</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile" class="hero container">
+            <div class="hero-content">
+                <p class="greeting">Hi, I'm JOHN,</p>
+                <h2>A Full-Stack Developer</h2>
+                <h1 class="role">& UI/UX Enthusiast.</h1>
+                <p class="summary-text">
+                    A motivated B.E. (Information Science) student with strong skills in React.js, Node.js, Python, and Database Management. Experienced in building scalable, user-focused solutions like an E-Commerce platform and an Expense Tracker web app. Eager to contribute to dynamic teams and grow as a software developer.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="mailto:johng814726@gmail.com" class="btn secondary-btn">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="john.jpg" alt="John Profile Picture" class="profile-pic">
+            </div>
+        </section>
+        
+        <section id="skills" class="section-padding">
+            <div class="container">
+                <h3 class="section-title">Core Skills & Tech Stack</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-code skill-icon"></i>
+                        <h4>Full Stack Development</h4>
+                        <p>React.js, Node.js, HTML5, CSS3, JavaScript, Python, RESTful APIs.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-drafting-compass skill-icon"></i>
+                        <h4>UI/UX Design</h4>
+                        <p>Figma, Prototyping, Wireframing, User Research, Design Thinking, Usability Testing.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h4>Databases & Backend</h4>
+                        <p>Python, MySQL, SQL, NoSQL (Basic Concepts), DBMS.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-puzzle-piece skill-icon"></i>
+                        <h4>Tools & Concepts</h4>
+                        <p>Git, GitHub (Basics), Power BI, Tableau, Computer Networks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padding accent-bg">
+            <div class="container">
+                <h3 class="section-title">Key Projects</h3>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h4>Fresh Farm Produce E-Commerce Platform</h4>
+                        <span class="project-tech-badge">Main Project | Full-Stack MERN-like</span>
+                        <ul>
+                            <li>Engineered a full-stack application connecting farmers directly with consumers.</li>
+                            <li>Designed user-centric interfaces in Figma.</li>
+                            <li>Developed a dynamic front-end using React.js with responsive components.</li>
+                            <li>Built a robust back-end with Node.js and Python to handle API requests.</li>
+                            <li>Managed database operations using SQL and MySQL.</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <h4>Expenses Tracker Web Application</h4>
+                        <span class="project-tech-badge">Mini Project | Front-end Focus</span>
+                        <ul>
+                            <li>Created a single-page web app using HTML5, CSS3, and JavaScript.</li>
+                            <li>Designed clean and minimal UI layouts emphasizing clarity and ease of use.</li>
+                            <li>Implemented a Python + SQL backend for secure data handling.</li>
+                            <li>Added visual dashboards with charts for spending insights.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education" class="section-padding">
+            <div class="container">
+                <h3 class="section-title">Education & Certifications</h3>
+                <div class="education-container">
+                    <div class="edu-item">
+                        <i class="fas fa-university edu-icon"></i>
+                        <h4>Bachelor of Engineering in Information Science</h4>
+                        <p class="institution">Guru Nanak Dev Engineering College, Bidar, Karnataka</p>
+                        <p class="date">Nov 2022 - May 2026 (Expected)</p>
+                    </div>
+                    <div class="edu-item">
+                        <i class="fas fa-certificate edu-icon"></i>
+                        <h4>Selected Certifications</h4>
+                        <p class="institution">Advancements in deep learning, machine learning, big data and Ai (Feb 2024)</p>
+                        <p class="institution">Cloud, quantum computing and artificial intelligence application (Jun-Jul 2024)</p>
+                        <p class="institution">Cyber security awareness (May 2024)</p>
+                        <p class="institution">Soft robotics (May 2024)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section-padding accent-bg">
+            <div class="container contact-content">
+                <h3 class="section-title">Let's Connect</h3>
+                <p>I am actively seeking opportunities as a software developer and welcome a conversation about full-stack development, UI/UX, or data management roles.</p>
+                <a href="mailto:johng814726@gmail.com" class="btn primary-btn large-btn">Email Me: johng814726@gmail.com</a>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +91 94821 66235</p>
+                    <a href="https://www.linkedin.com/in/john-g-830327293/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+                    <p><i class="fas fa-map-marker-alt"></i> Bidar, Karnataka, India</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 John.dev. Built with passion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
